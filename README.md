@@ -24,7 +24,7 @@ The underlying data contained raw sales and return logs with date alignment issu
 
 
 * **Data Cleaning & Date Logic Fix:** Solved a source system bug where sale and return dates were chronologically reversed.
-* **Tiered Refund Policy:** Implemented calculated fields to apply a custom refund logic (100%, 50%, or 0% refund) based on how quickly the product was returned.
+* **Tiered Refund Policy:** Implemented calculated fields for refund logic based on the return window duration (100% refund for $\le$60 days, 50% refund for 61–100 days, 0% refund for$>$100 days).
 * **Data Modeling & Branching:** Created dedicated aggregated outputs to support both executive-level monthly metrics and granular product-level analysis (`Join` & `Aggregation` steps).
 
 ---
