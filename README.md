@@ -17,6 +17,9 @@ This project introduces an **"Early Warning System"**:
 ---
 
 ## Data Pipeline & Business Logic (Tableau Prep)
+
+![Tableau Prep Pipeline](Refunds_Screen1.png)
+
 The underlying data contained raw sales and return logs with date alignment issues and missing policy rules. I built a multi-branch ETL workflow in **Tableau Prep** to clean and structure the data before visualization:
 
 
@@ -24,12 +27,13 @@ The underlying data contained raw sales and return logs with date alignment issu
 * **Tiered Refund Policy:** Implemented calculated fields to apply a custom refund logic (100%, 50%, or 0% refund) based on how quickly the product was returned.
 * **Data Modeling & Branching:** Created dedicated aggregated outputs to support both executive-level monthly metrics and granular product-level analysis (`Join` & `Aggregation` steps).
 
-![Tableau Prep Pipeline](Refunds_Screen1.png)
 ---
 
 ## Dashboard Architecture & Operational Logic
 
 ![Main Dashboard Overview](Refunds_Screen2.png)
+
+![Main Dashboard Overview](Refunds_Screen3.png)
 
 The dashboard is structured like a diagnostic funnel — moving from a high-level status check to deep operational analysis:
 
